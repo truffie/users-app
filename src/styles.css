@@ -14,7 +14,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+#root{
+  width: 100vw;
+  height: 100vh;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -67,6 +70,7 @@ img {
 }
 
 .content {
+  align-self: center;
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
@@ -74,7 +78,7 @@ img {
   border-radius: 2px;
   width: max-content;
   padding: 1.5rem 1rem;
-  margin: 1rem;
+  margin: 1rem auto;
   font-weight: 500;
 
   input, button, select {
