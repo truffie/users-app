@@ -65,3 +65,69 @@ img {
   border: 2px solid indigo;
   border-radius: 4px;
 }
+
+.content {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+  border: 1.5px solid grey;
+  border-radius: 2px;
+  width: max-content;
+  padding: 1.5rem 1rem;
+  margin: 1rem;
+  font-weight: 500;
+
+  input, button, select {
+    font-size: inherit;
+    background-color: transparent;
+    border: 1.5px solid grey;
+    border-radius: 2px;
+    color: black;
+    &::placeholder {
+      font-size: inherit;
+    }
+  }
+
+  & > * {
+    font-size: 1.25rem;
+  }
+
+  & .inpWrapper {
+    display: flex;
+    gap: 20px;
+
+  }
+
+  & .listWrapper {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+    & > * {
+      padding: 0;
+      margin: 0;
+      
+    }
+  }
+
+  & .pagWrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
+    & > div{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    button {
+      padding: 3px 6px;
+      border-radius: 5px;
+      &:disabled{
+        color: grey;
+      }
+    }
+    
+  }
+
+}
+
